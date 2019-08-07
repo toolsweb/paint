@@ -1,0 +1,151 @@
+#container {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.box {
+    -moz-transition: left .2s ease-in-out .1s;
+    -webkit-transition: left .2s ease-in-out .1s;
+    transition: left .2s ease-in-out .1s;
+    position: fixed;
+    left: -155px;
+    padding: 5px;
+    border: 1px solid white;
+    z-index: 100000;
+    opacity: 0.9;
+    background: #3D3D3D;
+    -moz-box-shadow: 3px 3px 10px #111, inset 0 0 10px black;
+    -webkit-box-shadow: 3px 3px 10px #111, inset 0 0 10px black; 
+    box-shadow: 3px 3px 10px #111, inset 0 0 10px black;
+}
+.box > .label {
+    height: 100%;
+    float: right;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.label > span {
+    display: block;
+    width: 100%;
+    float: right;
+    font-size: 1.3em;
+    font-weight: bold; 
+    line-height: 15px;
+    color: black;
+    text-shadow: 0px 3px 3px #555;
+    text-align: center
+}
+
+#boxmenu {
+    top: 0px;
+}
+
+#boxcolor {
+    top: 150px;
+    left: -205px;
+}
+
+#boxshape {
+    top: 350px;
+}
+.box:hover {
+    left: -2px;
+    -webkit-transition: left .2s ease-in-out;
+    transition: left .2s ease-in-out;
+}
+#boxcolor:hover {
+    left: -2px;
+    -webkit-transition: left .2s ease-in-out;
+    transition: left .2s ease-in-out;
+}
+
+#boxshape > #thinckness {
+    position: absolute;
+    top: 130px;
+    left: 5px;
+    width: 75%; 
+}
+
+.tools {
+    width: 30px;
+    height: 30px;
+    float: left;
+    border: none;
+    margin: 3px;
+}
+
+#boxcolor > #colorStripe {
+    position: absolute;
+    top: 10px;
+    left: 170px;
+    cursor: crosshair
+}
+#boxcolor > #colorPicker {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    cursor: crosshair
+}
+#colorpalette {
+    position: absolute;
+    height: 155px;
+    width: 640px;
+    border: 1px solid black;
+    top: 10px;
+    left: 50px;
+    z-index: 100000;
+}
+#tracers {
+    position: absolute;
+    top: 650px;
+    left: 50px;
+    border: 1px solid black;
+    min-height: 100px;
+    min-width: 500px;
+    -moz-box-shadow: 3px 3px 10px #111, inset 0 0 10px black;
+    -webkit-box-shadow: 3px 3px 10px #111, inset 0 0 10px black; 
+    box-shadow: 3px 3px 10px #111, inset 0 0 10px black;
+    z-index: 100000;
+}
+
+input[type="file"] {
+    display: none;
+}
+img, label {
+    height: 25px;
+    width: 25px;
+}
+.colors {
+   margin-top: -3px;
+}
+#exit_colorpalette {
+    position: absolute;
+    top: 158px;
+    left: -7px;
+    height: 10px;
+    width: 10px;
+}
+#exit_tracers {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    top: -12px;
+    left: -12px;
+}
+#height {
+    position: absolute;
+    top: 160px;
+    left: 600px;
+}
+#width {
+    position: absolute;
+    top: 160px;
+    left: 250px;
+}
